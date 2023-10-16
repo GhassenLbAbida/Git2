@@ -6,7 +6,7 @@ pipeline {
             steps {
                 // Build Docker image
                 script {
-                    def customImageName = "your-docker-image:latest"  // Modify this with your image name
+                    def customImageName = "jenkins/jenkins:latest"  // Modify this with your image name
 
                     sh "docker build -t ${customImageName} ."  // Build the Docker image
                 }
