@@ -2,6 +2,7 @@ let mediaRecorder;
 let recordedChunks = [];
 let timerInterval;
 let i=1;
+let x=3;
 // Function to start recording the audio
 async function startRecording() {
   console.log("startRecording called.");

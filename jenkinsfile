@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Pull from GitHub') {
+            steps {
+                // Étape pour effectuer un pull du code depuis GitHub
+                git 'https://github.com/GhassenLbAbida/GitInit.git'
+            }
+        }
+    }
+}
