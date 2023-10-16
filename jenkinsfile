@@ -5,7 +5,8 @@ pipeline {
         stage('Pull from GitHub') {
             steps {
                 // Étape pour effectuer un pull du code depuis GitHub
-                git 'https://github.com/votre_utilisateur/votre_projet.git'
+                  git branch: 'main', url: 'https://github.com/GhassenLbAbida/Git2.git
+        }
             }
         }
     }
