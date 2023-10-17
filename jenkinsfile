@@ -6,6 +6,8 @@ pipeline {
             steps {
                 // Étape pour effectuer un pull du code depuis GitHub
                   git branch: 'main', url: 'https://github.com/GhassenLbAbida/Git2.git'
+                  credentialsId: 'github-credentials' //jenkins-github-creds
+                  sh "ls -ltr"
         }
             }
         }
